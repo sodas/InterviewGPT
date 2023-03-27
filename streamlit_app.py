@@ -108,22 +108,7 @@ def play_audio(msg):
     audio_file_path = os.path.abspath(f.name)
 
     # play audio file
-    CHUNK = 1024
-    wf = wave.open(audio_file_path, 'rb')
-    p = pyaudio.PyAudio()
-    stream = p.open(format=p.get_format_from_width(wf.getsampwidth()),
-                    channels=wf.getnchannels(),
-                    rate=wf.getframerate(),
-                    output=True)
-    data = wf.readframes(CHUNK)
-
-    while data:
-        stream.write(data)
-        data = wf.readframes(CHUNK)
-
-    stream.stop_stream()
-    stream.close()
-    p.terminate()
+    playsound(audio_file_path)
 
 class chatbot:
     def __init__(self):
