@@ -3,7 +3,6 @@ gtts
 numpy
 openai
 playsound
-tempfile
 PyAudio
 PyPDF2
 queue
