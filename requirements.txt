@@ -4,6 +4,7 @@ numpy
 openai
 playsound
 PyAudio
+wave
 PyPDF2
 streamlit
 streamlit-chat
