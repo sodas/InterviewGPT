@@ -1,0 +1,8 @@
+azure-cognitiveservices-speech
+gtts
+numpy
+openai
+playsound
+PyAudio
+PyPDF2
+streamlit
