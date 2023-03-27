@@ -7,3 +7,4 @@ PyAudio
 PyPDF2
 streamlit
 streamlit-chat
+pyobjc
