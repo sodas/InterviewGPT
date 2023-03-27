@@ -1,9 +1,14 @@
 azure-cognitiveservices-speech
+azure-cognitiveservices-speech.audio
 gtts
 numpy
 openai
+os
 playsound
+tempfile
 PyAudio
 PyPDF2
+queue
+time
 streamlit
 streamlit-chat
