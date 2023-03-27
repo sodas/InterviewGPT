@@ -5,7 +5,6 @@ openai
 playsound
 PyAudio
 PyPDF2
-queue
 time
 streamlit
 streamlit-chat
