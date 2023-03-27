@@ -6,3 +6,4 @@ playsound
 PyAudio
 PyPDF2
 streamlit
+streamlit-chat
