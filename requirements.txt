@@ -8,3 +8,4 @@ PyPDF2
 streamlit
 streamlit-chat
 pyobjc
+pyobjc-framework-quartz
