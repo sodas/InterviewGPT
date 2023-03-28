@@ -106,8 +106,7 @@ def play_audio(msg):
     tts.write_to_fp(f)
     f.close()
     audio_file_path = os.path.abspath(f.name)
-    print(audio_file_path)
-    
+
     # play audio file
     playsound(audio_file_path)
 
@@ -166,7 +165,7 @@ if file is not None:
         print("gpt:"+ msg)
         st.session_state.generated.append(msg)
         #list_questions.append(msg)
-        print(st.session_state)
+        #print(st.session_state)
         message(msg)
         play_audio(msg)
         file.close()
