@@ -4,11 +4,11 @@ import openai
 import os
 from gtts import gTTS
 from playsound import playsound
+import wave
 from tempfile import NamedTemporaryFile
 import pyaudio
 import queue
 import time
-import wave
 from azure.cognitiveservices.speech import AudioDataStream, SpeechConfig, SpeechRecognizer
 from azure.cognitiveservices.speech.audio import AudioOutputConfig
 from azure.cognitiveservices.speech import ResultReason, CancellationReason
@@ -106,7 +106,8 @@ def play_audio(msg):
     tts.write_to_fp(f)
     f.close()
     audio_file_path = os.path.abspath(f.name)
-
+    print(audio_file_path)
+    
     # play audio file
     playsound(audio_file_path)
 
