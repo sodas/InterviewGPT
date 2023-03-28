@@ -108,7 +108,9 @@ def play_audio(msg):
     audio_file_path = os.path.abspath(f.name)
 
     # play audio file
-    playsound(audio_file_path)
+    # playsound(audio_file_path)
+    st.audio(audio_file_path, format='audio/mp3')
+
 
 class chatbot:
     def __init__(self):
